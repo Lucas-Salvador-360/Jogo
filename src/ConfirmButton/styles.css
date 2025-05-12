@@ -1,0 +1,20 @@
+.confirm-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .confirm-button.confirmed {
+    background-color: #28a745; /* Cor verde para indicar confirmação */
+  }
+  
+  .confirm-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .confirm-button.confirmed:hover {
+    background-color: #218838; /* Cor verde escura para hover quando confirmado */
+  }

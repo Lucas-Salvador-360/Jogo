@@ -1,0 +1,15 @@
+.input-with-title {
+    margin-bottom: 20px;
+  }
+  
+  .input-title {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }

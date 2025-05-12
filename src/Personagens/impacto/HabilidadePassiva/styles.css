@@ -1,0 +1,46 @@
+.bold-text {
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 12px;
+    color: white; /* Para garantir que o texto seja visível sobre o fundo */
+    padding: 5px;
+  }
+ 
+.so-text-bold {
+    font-weight: bold;
+  }
+
+  /* Contêiner principal que centraliza o texto */
+.description-container {
+    width: 35%; /* Largura do texto */
+    padding: 20px; /* Espaçamento interno para a borda */
+    margin: 0 auto; /* Centraliza horizontalmente */
+ /* Borda maior nas laterais */
+    border-radius: 8px; /* Borda arredondada */
+    text-align: center; /* Alinha o texto no centro */
+    font-size: 16px; /* Tamanho da fonte */
+    line-height: 1.6; /* Espaçamento entre as linhas */
+    background-color: #282c34; /* Cor de fundo */
+  }
+  
+  /* Estilo para o parágrafo, caso precise */
+  .description-container p {
+    word-wrap: break-word; /* Quebra o texto em palavras para evitar que ultrapasse os limites */
+  }
+
+  .container {
+    display: flex; /* Ativa o Flexbox */
+    justify-content: space-between; /* Espaça os itens igualmente */
+    gap: 10px; /* Adiciona um espaço entre os elementos */
+    padding: 20px;
+  }
+  
+ /* Estilo para o botão, fixando-o na parte inferior do bloco */
+.button-container {
+    position: absolute;
+    bottom: 20px; /* Coloca o botão 20px do fundo */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza o botão horizontalmente */
+  } 

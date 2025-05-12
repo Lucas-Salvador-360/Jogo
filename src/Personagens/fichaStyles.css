@@ -1,0 +1,17 @@
+.ficha-page {
+    background-color: #282c34;
+    min-height: 100vh;
+    padding: 40px;
+    color: #FFF;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .ficha-page h1 {
+    margin-bottom: 20px;
+  }
+  
+  .ficha-page ul {
+    list-style-type: square;
+    padding-left: 20px;
+  }
+  
