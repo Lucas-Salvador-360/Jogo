@@ -1,0 +1,68 @@
+.container {
+  padding: 20px;
+  color: white;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container h1 {
+  text-align: center;
+  color: #61dafb;
+  margin-bottom: 30px;
+}
+
+.container h2 {
+  color: #61dafb;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.tecnicas {
+  background-color: #3a3f4b;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.stats-fixos {
+  background-color: #3a3f4b;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 30px 0;
+}
+
+.stats-fixos p {
+  margin: 10px 0;
+}
+
+.modo-reivolk {
+  background-color: #3a3f4b;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 30px 0;
+}
+
+.btn-criar {
+  width: 100%;
+  padding: 15px;
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: all 0.3s ease;
+}
+
+.btn-criar:hover {
+  background-color: #4fa8d3;
+  transform: translateY(-2px);
+}
+
+.btn-criar:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  transform: none;
+}

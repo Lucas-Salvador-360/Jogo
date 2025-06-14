@@ -1,0 +1,69 @@
+.personagem-container {
+  padding: 20px;
+  color: white;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.personagem-container h1 {
+  text-align: center;
+  color: #61dafb;
+  margin-bottom: 30px;
+}
+
+.tecnicas {
+  background-color: #3a3f4b;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.tecnicas h2 {
+  color: #61dafb;
+  margin-bottom: 10px;
+}
+
+.stats-fixos {
+  background-color: #3a3f4b;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.stats-fixos h2 {
+  color: #61dafb;
+  margin-bottom: 15px;
+}
+
+.stats-fixos p {
+  margin: 10px 0;
+}
+
+.modo-reivolk {
+  background-color: #3a3f4b;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.modo-reivolk h2 {
+  color: #61dafb;
+  margin-bottom: 15px;
+}
+
+.btn-criar {
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 20px 0;
+  width: 100%;
+  font-weight: bold;
+}
+
+.btn-criar:hover {
+  background-color: #4fa8d3;
+}

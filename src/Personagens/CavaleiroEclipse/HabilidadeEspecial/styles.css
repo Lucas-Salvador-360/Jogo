@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 10px;
+}
+
+.description-container {
+  background: #282c34;
+  padding: 20px;
+  border-radius: 8px;
+  width: 60%;
+  color: #fff;
+  text-align: center;
+}
+
+.description-container.selected {
+  border: 2px solid #61dafb;
+  background-color: #2a3a4a;
+}
+
+.so-text-bold {
+  font-weight: bold;
+  margin-bottom: 8px;
+}

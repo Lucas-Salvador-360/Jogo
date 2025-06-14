@@ -1,0 +1,43 @@
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 20px;
+}
+
+.description-container {
+  background: #282c34;
+  padding: 20px;
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+}
+
+.description-container.selected {
+  border: 2px solid #007bff;
+}
+
+.so-text-bold {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.footer-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px 0;
+  background-color: #282c34;
+  width: 100%;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.btn-acao {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}

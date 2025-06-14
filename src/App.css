@@ -5,6 +5,7 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  margin-bottom: 30px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -16,14 +17,13 @@
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
   text-align: center;
-  padding: 40px;
+  padding: 20px;
 }
 
 .App-link {
@@ -45,9 +45,13 @@
 
 .header-buttons {
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px 0;
 }
 
 .header-buttons a {

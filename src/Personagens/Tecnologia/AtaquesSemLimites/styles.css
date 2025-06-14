@@ -1,0 +1,51 @@
+.ataques-section {
+  margin: 30px 0;
+}
+
+.ataques-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.ataque-card {
+  background-color: #3a3f4b;
+  border-radius: 8px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.ataque-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.ataque-card.selected {
+  border-color: #61dafb;
+  background-color: #2a3a4a;
+}
+
+.ataque-card h3 {
+  color: #61dafb;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+.ataque-card p {
+  margin: 8px 0;
+  font-size: 0.9em;
+}
+
+.ataque-card .observacao {
+  margin-top: 15px;
+  font-size: 0.85em;
+  color: #aaa;
+  font-style: italic;
+}
+
+.ataque-card strong {
+  color: #61dafb;
+}
