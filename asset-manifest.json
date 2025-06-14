@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Jogo/static/css/main.7abfa4a1.css",
-    "main.js": "/Jogo/static/js/main.6feed247.js",
+    "main.js": "/Jogo/static/js/main.32e14c36.js",
     "static/js/453.ed3810f9.chunk.js": "/Jogo/static/js/453.ed3810f9.chunk.js",
     "static/media/image.png": "/Jogo/static/media/image.6189bd3065ec3931e8b3.png",
     "index.html": "/Jogo/index.html",
     "main.7abfa4a1.css.map": "/Jogo/static/css/main.7abfa4a1.css.map",
-    "main.6feed247.js.map": "/Jogo/static/js/main.6feed247.js.map",
+    "main.32e14c36.js.map": "/Jogo/static/js/main.32e14c36.js.map",
     "453.ed3810f9.chunk.js.map": "/Jogo/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7abfa4a1.css",
-    "static/js/main.6feed247.js"
+    "static/js/main.32e14c36.js"
   ]
 }
