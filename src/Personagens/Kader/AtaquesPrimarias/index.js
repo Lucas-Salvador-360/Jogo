@@ -7,6 +7,7 @@ import HabilidadeEspecial from '../HabilidadeEspecial';
 
 function Kader() {
   const navigate = useNavigate();
+  const [selected, setSelected] = useState(null);
   const [selectedArmas, setSelectedArmas] = useState([]);
   const [selectedDispositivos, setSelectedDispositivos] = useState([]);
   const [habilidadeEspecial, setHabilidadeEspecial] = useState(null);
@@ -31,6 +32,7 @@ Efeito: Não precisa estar entre pontos de conexão.`
       descricao: 'Dano 1 | Distância 4/10 | Segundos 1 | Dados 6 | Ambiente T/A/E'
     }
   ];
+  
 
   const handleSelect = (i) => {
     setSelectedArmas(prev => {
@@ -112,14 +114,8 @@ Efeito: Não precisa estar entre pontos de conexão.`
       <HabilidadeEspecial setSelecionada={setHabilidadeEspecial} />
 
       <footer className="footer-buttons">
-        <button
-          onClick={handleCriarFicha}
-          className="btn-acao"
-          disabled={selectedArmas.length !== 2 || !selectedDispositivos || !selectedDispositivos.length || !habilidadeEspecial}
-        >
-          Criar Ficha
-        </button>
-        <button onClick={handleHomeClick} className="btn-acao">Home</button>
+        <button onClick={handleCriarFicha} className="btn-acao">Criar Ficha</button>
+        <button onClick={() => navigate('/')} className="btn-acao">Home</button>
       </footer>
     </div>
   );

@@ -1,60 +1,57 @@
 import React, { useState, useEffect } from 'react';
 import './styles.css';
-import ConfirmButton from '../../../ConfirmButton';
 
-function Poderes({ setSelecionados }) {
-  const poderes = [
+const Poderes = ({ setSelecionados }) => {
+  const [selectedPoderes, setSelectedPoderes] = useState([]);
+
+  const poderesList = [
     {
-      nome: '(P)Mira',
-      descricao: 'Ganha +1 dado para atacar.'
+      nome: 'Força Sobre-Humana',
+      descricao: 'Capacidade de exercer força muito além dos limites humanos normais.'
     },
     {
-      nome: '(P)Visão',
-      descricao: 'Pode atacar sem estar entre ponto de conexão.'
+      nome: 'Resistência Aprimorada',
+      descricao: 'Capacidade de suportar danos físicos extremos e recuperar-se rapidamente.'
     },
     {
-      nome: '(P)Precisão',
-      descricao: '+2 em cada dado de ataque.'
+      nome: 'Agilidade Excepcional',
+      descricao: 'Movimentos e reflexos muito acima da média humana.'
     }
   ];
 
-  const [selectedIndex, setSelectedIndex] = useState(null);
+  useEffect(() => {
+    setSelecionados(selectedPoderes);
+  }, [selectedPoderes, setSelecionados]);
 
-  const handleClick = (index) => {
-    setSelectedIndex(prev => (prev === index ? null : index));
+  const handlePoderClick = (poder) => {
+    if (selectedPoderes.includes(poder)) {
+      setSelectedPoderes(selectedPoderes.filter(p => p !== poder));
+    } else if (selectedPoderes.length < 2) {
+      setSelectedPoderes([...selectedPoderes, poder]);
+    }
   };
 
-  useEffect(() => {
-    if (selectedIndex !== null) {
-      const selected = `${poderes[selectedIndex].nome}: ${poderes[selectedIndex].descricao}`;
-      setSelecionados(selected);
-    } else {
-      setSelecionados(null);
-    }
-  }, [selectedIndex, setSelecionados]);
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Escolha 1 Poder:</h1>
-
-        <div className="container">
-          {poderes.map((poder, i) => (
-            <div key={i} className="description-container">
-              <p className="so-text-bold">{poder.nome}</p>
-              <p>{poder.descricao}</p>
-              <ConfirmButton
-                onClick={() => handleClick(i)}
-                disabled={selectedIndex !== null && selectedIndex !== i}
-              >
-                Confirmar
-              </ConfirmButton>
-            </div>
-          ))}
-        </div>
-      </header>
+    <div className="poderes-container">
+      <div className="poderes-grid">
+        {poderesList.map((poder, index) => (
+          <div
+            key={index}
+            className={`poder-card ${selectedPoderes.includes(poder) ? 'selected' : ''}`}
+            onClick={() => handlePoderClick(poder)}
+          >
+            <h3>{poder.nome}</h3>
+            <p>{poder.descricao}</p>
+          </div>
+        ))}
+      </div>
+      <div className="botoes-footer">
+        <span className="contador">
+          Poderes selecionados: {selectedPoderes.length}/2
+        </span>
+      </div>
     </div>
   );
-}
+};
 
 export default Poderes;
